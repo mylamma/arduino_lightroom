@@ -132,7 +132,7 @@ void changeMode() {
 void rotateLeft() {
   if (tempCount++ % RESOLUTION == 0) {
     if (mode == shift_arrow_MODE ) {
-      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press(KEY_UP_ARROW);
       
     } else if (mode == VERTICAL_MODE) {
@@ -145,7 +145,7 @@ void rotateLeft() {
 void rotateRight() {
   if (tempCount++ % RESOLUTION == 0) {
     if (mode == shift_arrow_MODE) {
-      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press(KEY_DOWN_ARROW);
     } else if (mode == VERTICAL_MODE) {
       Keyboard.press(KEY_DOWN_ARROW);
